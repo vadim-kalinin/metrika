@@ -1,0 +1,336 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+}
+
+.navigation-block {
+    width: 1150px;
+    margin: 33px auto 70px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color:#121212;
+    text-decoration: none;
+    margin-right: 60px;
+    text-transform: uppercase;
+    padding: 20px 15px 2px 15px;
+}
+
+.nav:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.nav:hover,
+.nav:active {
+    border-bottom: 1px solid #121212;
+    opacity: 50%;
+}
+
+
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #121212;
+    margin-bottom: 30px;
+    letter-spacing: -0.03em;
+    width: 956px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #121212;
+    margin-bottom: 30px;
+    letter-spacing: -0.03em;
+}
+
+.container {
+    width: 1150px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.top-image {
+    width: 1150px;
+    height: 500px;
+    background-image: url(../resources/topimg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.text-image {
+    width: 430px;
+    height: 81px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+    bottom: 40px;
+    left: 40px;
+    position: absolute;
+    letter-spacing: -0.03em;
+}
+
+.text-about {
+    width: 1048px;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 61px;
+    color: #121212;
+    margin-bottom: 30px;
+    letter-spacing: -0.03em;
+}
+
+.btn {
+    display: inline-block;
+    width: max-content;
+    padding: 20px 40px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #ad1818;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    margin-bottom: 150px;
+}
+
+.item-project {
+    width: 1150px;
+    margin-bottom: 90px;
+}
+
+.photo {
+    margin-bottom: 15px;
+}
+
+.name-project {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    color: #121212;
+    height: 41px;
+    margin-bottom: 15px;
+}
+
+.item-img {
+    height: 41px;
+    width: auto;
+    margin-left: 5px;
+}
+
+.item-text-btn {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color:#ad1818;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+
+.watch-all-projects {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 153px;
+    letter-spacing: -0.03em;
+    background-color: #fff;
+    border: #ad1818 1px solid;
+    border-radius: 5px;
+    color:#ad1818;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.watch-all-projects:hover {
+    background-color: #ad1818;
+    color:#fff;
+}
+
+.services {
+    background-color: #121212;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+}
+
+.light {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 34px;
+    letter-spacing: -0.03em;
+}
+
+.item-service {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.item-service:nth-last-child(1) {
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.price-service {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #ad1818;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    width: max-content;
+    letter-spacing: -0.03em;
+}
+
+.name-service {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.bed {
+    position: relative;
+    background-image: url(../resources/bed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 717px;
+}
+
+.bed-text {
+    position: absolute;
+    left: 125px;
+    bottom: 60px;
+    width: 443px;
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    color:#fff;
+}
+
+.contact {
+    padding: 150px 124px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+h2.name-contact {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    color: #121212;
+    margin-bottom: 30px;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+}
+
+h2.name-contact::before {
+    display: block;
+    content: '';
+    background-image: url(../resources/phone.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+    margin-left: -4px;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #121212;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.email {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #121212;
+    opacity: 50%;
+    border-bottom: 2px solid #121212;
+    width: max-content;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #121212;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navfooter {
+    color:#fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    margin-right: 53px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navfooter:hover {
+    opacity: 50%;
+}
+
+.navfooter:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.navigation-footer {
+    margin-bottom: 87px;
+}
+
+.footer-text {
+    color:#fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    opacity: 50%;
+}
