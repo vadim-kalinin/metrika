@@ -6,156 +6,104 @@ body {
         font-family: "Manrope", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-}
-
-.navigation-block {
-    width: 1150px;
-    margin: 33px auto 70px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    color:#121212;
-    text-decoration: none;
-    margin-right: 60px;
-    text-transform: uppercase;
-    padding: 20px 15px 2px 15px;
-}
-
-.nav:nth-last-child(1) {
-    margin-right: 0;
-}
-
-.nav:hover,
-.nav:active {
-    border-bottom: 1px solid #121212;
-    opacity: 50%;
-}
-
-
-
-h1 {
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    color: #121212;
-    margin-bottom: 30px;
-    letter-spacing: -0.03em;
-    width: 956px;
-}
-
-h2 {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    color: #121212;
-    margin-bottom: 30px;
-    letter-spacing: -0.03em;
+        font-weight: 400;
+        letter-spacing: -0.03em;
+        min-width: 430px;
 }
 
 .container {
     width: 1150px;
-    box-sizing: border-box;
     margin: 0 auto;
 }
 
-.top-image {
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    color: #121212;
+    margin-bottom: 30px;
+    width: 971px;
+}
+
+.header-photo {
+    position: relative;
+    margin-bottom: 150px;
     width: 100%;
     height: 500px;
     background-image: url(../resources/topimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    position: relative;
-    margin-bottom: 150px;
 }
 
-.text-image {
-    width: 430px;
-    height: 81px;
-    font-weight: 400;
+.header-title {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
     font-size: 20px;
     line-height: 27px;
     color: #ffffff;
-    bottom: 40px;
-    left: 40px;
-    position: absolute;
-    letter-spacing: -0.03em;
+    width: 430px;
 }
 
-.text-about {
-    width: 1048px;
-    font-weight: 400;
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 25px;
+    color:#121212;
+    margin-bottom: 30px;
+}
+
+.about-us-text {
+    width: 1081px;
     font-size: 45px;
     line-height: 61px;
     color: #121212;
     margin-bottom: 30px;
-    letter-spacing: -0.03em;
 }
 
 .btn {
-    display: inline-block;
     width: max-content;
     padding: 20px 40px;
-    color: #fff;
     border-radius: 5px;
     background-color: #ad1818;
-    font-weight: 400;
+    color: #ffffff;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
     text-decoration: none;
     margin-bottom: 150px;
+    display: block;
 }
 
-.item-project {
-    width: 1150px;
+.project-item {
     margin-bottom: 90px;
 }
 
-.photo {
+.project-img {
+    display: block;
+    width: 100%;
+    height: 450px;
     margin-bottom: 15px;
 }
 
-.name-project {
-    font-weight: 400;
+h3 {
+    text-transform: uppercase;
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.03em;
     color: #121212;
-    height: 41px;
     margin-bottom: 15px;
 }
 
-.item-img {
-    height: 41px;
-    width: auto;
-    margin-left: 5px;
-}
-
-.item-text-btn {
-    font-weight: 400;
+.btn-project {
+    display: block;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
-    color:#ad1818;
+    color: #ad1818;
     text-decoration: none;
-    cursor: pointer;
-    background-color: #fff;
-    border: none;
 }
 
 .watch-all-projects {
-    font-weight: 400;
     font-size: 30px;
     line-height: 153px;
-    letter-spacing: -0.03em;
     background-color: #fff;
     border: #ad1818 1px solid;
     border-radius: 5px;
@@ -171,248 +119,423 @@ h2 {
     color:#fff;
 }
 
-.services {
+.black {
     background-color: #121212;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    box-sizing: border-box;
+    padding-top:120px;
+    margin-bottom: 150px;
 }
 
 .light {
-    font-weight: 400;
-    font-size: 14px;
+    text-transform: uppercase;
+    font-size: 18px;
     line-height: 25px;
-    color: #fff;
-    margin-bottom: 34px;
-    letter-spacing: -0.03em;
+    color:#ffffff;
+    margin-bottom: 30px;
 }
 
-.item-service {
-    margin-bottom: 60px;
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    margin-bottom: 104px;
+}
+
+.service-item {
+    width: calc(50% - 5px);
     position: relative;
+    
 }
 
-.item-service:nth-last-child(1) {
+.service-item:nth-last-child(1),
+.service-item:nth-last-child(2) {
     margin-bottom: 0px;
-    position: relative;
 }
 
-.price-service {
+.service-image {
+    margin-bottom: 25px;
+    width: 100%;
+    height: 388px;
+}
+
+.price {
     position: absolute;
-    top: 40px;
-    left: 40px;
-    padding: 10px 15px;
-    color: #fff;
+    top: 30px;
+    left: 30px;
+    width: max-content;
+    padding: 5px 22px;
     background-color: #ad1818;
     border-radius: 5px;
-    font-weight: 400;
-    font-size: 18px;
-    width: max-content;
-    letter-spacing: -0.03em;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 30px;
 }
 
-.name-service {
-    font-weight: 400;
+.light-name {
+    color: #ffffff;
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.03em;
-    color: #fff;
+    width: 426px;
+    text-transform: none;
+    margin-bottom: 0;
 }
 
-.bed {
-    position: relative;
+.service-btn {
+    font-size: 30px;
+    line-height: 41px;
+    background-color: #ad1818;
+    border: #ad1818 1px solid;
+    border-radius: 5px;
+    color:#ffffff;
+    cursor: pointer;
+    width: 100%;
+    height: 153px;
+    margin-bottom: 150px;
+}
+
+.service-btn:hover {
+    background-color: #ffffff;
+    color:#ad1818;
+}
+/*                           */
+
+.review-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    
+}
+
+.review-item {
+    width: calc(50% - 25px);
+    height: auto;
+    flex-grow: 1;
+    max-width: 861px;
+    min-width: 530px;
+}
+
+.name-review {
+    margin-bottom: 14px;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+.body-review {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.review {
+    margin-bottom: 150px;
+}
+
+.gallery {
     background-image: url(../resources/bed.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: 50%;
+    background-size: cover;
+    width: 100%;
     height: 717px;
+    margin: 0 auto;
 }
 
-.bed-text {
-    position: absolute;
-    left: 125px;
-    bottom: 60px;
-    width: 443px;
-    font-weight: 400px;
-    font-size: 30px;
-    line-height: 41px;
-    letter-spacing: -0.03em;
-    color:#fff;
-}
 
-.contact {
-    padding: 150px 124px;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-}
-
-h2.name-contact {
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 25px;
-    color: #121212;
-    margin-bottom: 30px;
-    letter-spacing: -0.03em;
-    margin-bottom: 32px;
-}
-
-h2.name-contact::before {
-    display: block;
-    content: '';
-    background-image: url(../resources/phone.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
-    margin-bottom: 12px;
-    margin-left: -4px;
-}
-
-.number {
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -0.03em;
-    color: #121212;
-    margin-bottom: 30px;
-    text-decoration: none;
-}
-
-.email {
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -0.03em;
-    color: #121212;
-    opacity: 50%;
-    border-bottom: 2px solid #121212;
-    width: max-content;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-.footer {
-    background-color: #121212;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.navfooter {
-    color:#fff;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    margin-right: 53px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.navfooter:hover {
-    opacity: 50%;
-}
-
-.navfooter:nth-last-child(1) {
-    margin-right: 0;
-}
-
-.navigation-footer {
-    margin-bottom: 87px;
-}
-
-.footer-text {
-    color:#fff;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: -0.03em;
-    opacity: 50%;
-}
 
 @media (max-width: 1199px) {
-
     .container {
+        width: 930px;
         padding-left: 15px;
         padding-right: 15px;
-        width: 930px;
     }
 
     h1 {
+        width: 807px;
         font-size: 50px;
-        width: 802px;
+        line-height: 60px;
     }
 
-    .top-image {
-        height: 400px;
+    .header-photo {
         margin-bottom: 120px;
+        height: 400px;
     }
 
-    .text-image {
-        left: 42px;
+    .header-title {
+        left: 30px;
         bottom: 30px;
     }
 
-    .h2 {
-        font-size: 18px;
-    }
-
-    .text-about {
+    .about-us-text {
+        width: 709px;
         font-size: 35px;
         line-height: 48px;
-        width: 690px;
     }
 
+    .btn {
+        margin-bottom: 120px;
+    }
+
+    .project-item {
+        margin-bottom: 80px;
+    }
+
+    .project-item:nth-last-child(1) {
+        margin-bottom: 100px;
+    }
+
+    .project-img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 450px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        line-height: 34px;
+        margin-bottom: 10px;
+    }
+
+    .watch-all-projects {
+        font-size: 30px;
+        line-height: 41px;
+        margin-bottom: 100px;
+        height: 153px;
+    }
+    
+    .black {
+        padding-top:150px;
+        margin-bottom: 120px;
+    }
+
+    .service-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+    
+    .service-item {
+        width: 460px;
+        position: relative;
+        row-gap: 80px;
+    }
+    
+    .service-item:nth-last-child(1),
+    .service-item:nth-last-child(2) {
+        margin-bottom: 0px;
+    }
+    
+    .service-image {
+        margin-bottom: 15px;
+        width: 100%;
+        height: 315px;
+        object-fit: cover;
+    }
+    
+    .price {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+    .light-name {
+        font-size: 25px;
+        line-height: 34px;
+        width: 393px;
+    }
+    
+    .service-btn {
+        font-size: 30px;
+        line-height: 41px;
+        height: 153px;
+        margin-bottom: 120px;
+    }
+
+    .review-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 80px;
+        column-gap: 10px;
+        
+    }
+    
+    .review-item {
+        width: calc(50% - 5px);
+        height: auto;
+        flex-grow: 1;
+        max-width: 694px;
+        min-width: 459px;
+    }
+    
+    .name-review {
+        margin-bottom: 25px;
+        font-size: 35px;
+        line-height: 48px;
+    }
+    
+    .body-review {
+        font-size: 20px;
+        line-height: 27px;
+    }
 }
 
-@media (max-width: 767px) {
-
+@media (max-width: 959px) {
     .container {
-        padding-left: 12px;
-        padding-right: 12px;
         width: 350px;
+        padding-left: 13px;
+        padding-right: 13px;
     }
 
     h1 {
+        width: 346px;
         font-size: 30px;
-        width: 336px;
         line-height: 32px;
         margin-bottom: 25px;
     }
 
-    .top-image {
-        height: 300px;
+    .header-photo {
         margin-bottom: 80px;
+        height: 304px;
+
     }
 
-    .text-image {
+    .header-title {
         width: 312px;
-        font-size: 16px;
-        line-height: 22px;
         left: 15px;
         bottom: 15px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
-    .h2 {
+    h2 {
         font-size: 14px;
+        line-height: 19px;
         margin-bottom: 20px;
     }
 
-    .text-about {
+    .about-us-text {
+        width: 346px;
         font-size: 22px;
         line-height: 30px;
-        width: 345px;
     }
 
     .btn {
         padding: 15px 30px;
+        margin-bottom: 80px;
         font-size: 16px;
         line-height: 22px;
+    }
+
+    .project-item {
+        margin-bottom: 49px;
+    }
+
+    .project-item:nth-last-child(1) {
+        margin-bottom: 60px;
+    }
+    
+    .project-img {
+        height: 250px;
+        margin-bottom: 20px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 11px;
+    }
+    
+    .btn-project {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .watch-all-projects {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 80px;
+        height: 100px;
+    }
+ 
+    .black {
+        padding-top:80px;
+        margin-bottom: 80px;
+    }
+    
+    .light {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+    
+    .service-wrapper {
+        display: block;
+    }
+    
+    .service-item {
+        width: 350px;
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    .service-item:nth-last-child(1),
+    .service-item:nth-last-child(2) {
+        margin-bottom: 60px;
+    }
+    
+    .service-image {
+        margin-bottom: 10px;
+        height: 240px;
+    }
+    
+    .price {
+        top: 23px;
+        left: 23px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .light-name {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 25px;
+        width: 299px;
+    }
+    
+    .service-btn {
+        font-size: 22px;
+        line-height: 30px;
+        height: 100px;
+        margin-bottom: 80px;
+    }
+
+    .review-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 80px;
+        
+    }
+    
+    .review-item {
+        width: calc(50% - 25px);
+        height: auto;
+        flex-grow: 1;
+        max-width: 349px;
+        min-width: 349px;
+    }
+    
+    .name-review {
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 34px;
+    }
+    
+    .body-review {
+        font-size: 16px;
+        line-height: 21px;
     }
 }
